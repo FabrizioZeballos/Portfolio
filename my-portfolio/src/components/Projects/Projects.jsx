@@ -7,42 +7,43 @@ import back from "../../assets/backend.png";
 const projectData = [
   {
     imageSrc: bank,
-    title: "Project One",
-    description: "A brief description of project one.",
-    link: "https://www.example.com/project-one",
+    title: "Bank App",
+    description:
+      "An app simplifying bank appointment scheduling, ensuring a seamless user experience from start to finish.",
+    link: "https://github.com/FabrizioZeballos/Bank-Application",
   },
   {
     imageSrc: fitness,
-    title: "Project Two",
-    description: "A brief description of project two.",
-    link: "https://www.example.com/project-one",
+    title: "Fitness App",
+    description:
+      "An app revolutionizing the fitness industry with real-time trainer advice, integrated payments, expert workout routines, and a chatbot.",
+    link: "https://front-core-force.vercel.app/",
   },
   {
     imageSrc: back,
-    title: "Project Three",
-    description: "A brief description of project two.",
-    link: "https://www.example.com/project-one",
+    title: "Ecommerce App",
+    description:
+      "An ecommerce management app with a scalable backend and seamless integration, ensuring optimal user experience.",
+    link: "https://github.com/FabrizioZeballos/Ecommerce-Backend",
   },
   // ... add more project data objects
 ];
 
 export const Projects = () => {
   return (
-    <div className={styles["projects-container"]}>
-      {projectData.map(
-        (project) => (
-          console.log(project.imageSrc),
-          (
-            <ProjectCard
-              key={1}
-              imageSrc={project.imageSrc}
-              title={project.title}
-              description={project.description}
-              link={project.link}
-            />
-          )
-        )
-      )}
+    <div>
+      <h3 className={styles["section-title"]}>Projects</h3>
+      <div className={styles["projects-container"]}>
+        {projectData.map((project) => (
+          <ProjectCard
+            key={1}
+            imageSrc={project.imageSrc}
+            title={project.title}
+            description={project.description}
+            link={project.link}
+          />
+        ))}
+      </div>
     </div>
   );
 };

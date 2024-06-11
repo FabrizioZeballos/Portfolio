@@ -6,9 +6,16 @@ export const ProjectCard = ({ imageSrc, title, description, link }) => {
       <div className={styles["img-container"]}>
         <img src={imageSrc} alt="" className={styles.image} />
       </div>
-      <h2>{title}</h2>
-      <p>{description}</p>
-      <a href="">{link}</a>
+      <h2 className={styles["project-title"]}>{title}</h2>
+      <p className={styles["project-txt"]}>{description}</p>
+      <a
+        href={link}
+        target="blank"
+        rel="noopener noreferrer"
+        className={styles.links}
+      >
+        {title === "Fitness App" ? "Website" : "Github"}
+      </a>
     </div>
   );
 };

@@ -14,7 +14,7 @@ function App() {
           <ProfilePicture />
           <Description />
         </div>
-        <div>
+        <div id="projects">
           <Projects />
         </div>
         <div>

@@ -1,12 +1,12 @@
 .general-container {
   overflow-x: hidden;
-  background-color: orange;
+  background-color: rgb(17, 24, 39);
+  color: #fff;
 }
 
 .home-container {
   width: 100vw;
   min-height: 100vh;
-  background-color: red;
   display: flex;
   flex-direction: column;
   justify-content: center;

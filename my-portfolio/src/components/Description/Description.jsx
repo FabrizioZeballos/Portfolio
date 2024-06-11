@@ -6,7 +6,9 @@ export const Description = () => {
       <p className={styles.description}>
         A Fullstack developer with a passion for building and learning.
       </p>
-      <button className={styles.btn}>View Projects</button>
+      <a className={styles.btn} href={"#projects"}>
+        View Projects
+      </a>
     </div>
   );
 };
