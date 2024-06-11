@@ -1,0 +1,8 @@
+.projects-container {
+  border: 1px solid greenyellow;
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: red;
+}
