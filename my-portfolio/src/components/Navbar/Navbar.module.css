@@ -4,7 +4,6 @@
 }
 
 .name span {
-  /* color: rgb(255, 128, 0); */
   color: rgb(14, 165, 233);
 }
 
@@ -41,8 +40,13 @@
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
 
 .nav-links a:hover {
   border: 0.01px solid rgb(141, 154, 178);
+}
+
+.nav-links a:active {
+  transform: scale(0.95);
 }

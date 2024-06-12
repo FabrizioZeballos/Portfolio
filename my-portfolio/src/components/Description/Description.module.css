@@ -1,5 +1,5 @@
 .description-container {
-  width: 512px;
+  width: 500px;
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
@@ -32,4 +32,8 @@
 .btn:hover {
   background-color: rgba(16, 120, 168, 0.966);
   cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.95);
 }

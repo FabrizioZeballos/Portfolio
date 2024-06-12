@@ -8,8 +8,8 @@
 .img-container {
   box-sizing: border-box;
   border: 10px solid rgba(3, 13, 39, 0.81);
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
   position: relative;
   border-radius: 50%;
   overflow: hidden;
@@ -25,8 +25,8 @@
 .element {
   position: absolute;
   top: -50%;
-  width: 600px;
-  height: 600px;
+  width: 560px;
+  height: 560px;
   background: radial-gradient(
     circle at center,
     rgba(37, 137, 244, 0.737),

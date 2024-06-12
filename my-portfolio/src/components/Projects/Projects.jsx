@@ -1,8 +1,10 @@
 import { ProjectCard } from "../ProjectCard/ProjectCard";
 import styles from "./Projects.module.css";
-import fitness from "../../assets/coreforce.png";
-import bank from "../../assets/bank.png";
-import back from "../../assets/backend.png";
+import fitness from "../../assets/coreforce2.png";
+import bank from "../../assets/bank2.png";
+import back from "../../assets/backend2.png";
+import { useEffect, useRef } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 const projectData = [
   {
@@ -26,12 +28,31 @@ const projectData = [
       "An ecommerce management app with a scalable backend and seamless integration, ensuring optimal user experience.",
     link: "https://github.com/FabrizioZeballos/Ecommerce-Backend",
   },
-  // ... add more project data objects
 ];
 
 export const Projects = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const mainControls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    }
+  }, [isInView, mainControls]);
+
   return (
-    <div>
+    <motion.div
+      ref={ref}
+      variants={{
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 },
+      }}
+      initial="hidden"
+      animate={mainControls}
+      transition={{ duration: 0.5, delay: 0.25 }}
+    >
       <h3 className={styles["section-title"]}>Projects</h3>
       <div className={styles["projects-container"]}>
         {projectData.map((project) => (
@@ -44,6 +65,6 @@ export const Projects = () => {
           />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
