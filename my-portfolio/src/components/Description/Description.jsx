@@ -4,10 +4,10 @@ export const Description = () => {
   return (
     <div className={styles["description-container"]}>
       <p className={styles.description}>
-        A Fullstack developer with a passion for building and learning.
+        Un desarrollador Fullstack con pasión por construir y aprender.
       </p>
       <a className={styles.btn} href={"#projects"}>
-        View Projects
+        Ver Proyectos
       </a>
     </div>
   );

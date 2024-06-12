@@ -14,7 +14,7 @@ export const ProjectCard = ({ imageSrc, title, description, link }) => {
         rel="noopener noreferrer"
         className={styles.links}
       >
-        {title === "Fitness App" ? "Website" : "Github"}
+        {title === "Fitness App" ? "Sitio Web" : "Github"}
       </a>
     </div>
   );

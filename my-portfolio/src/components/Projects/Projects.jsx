@@ -11,21 +11,21 @@ const projectData = [
     imageSrc: bank,
     title: "Bank App",
     description:
-      "An app simplifying bank appointment scheduling, ensuring a seamless user experience from start to finish.",
+      "Una aplicación innovadora que simplifica la programación de citas bancarias, asegurando una experiencia de usuario fluida de principio a fin.",
     link: "https://github.com/FabrizioZeballos/Bank-Application",
   },
   {
     imageSrc: fitness,
     title: "Fitness App",
     description:
-      "An app revolutionizing the fitness industry with real-time trainer advice, integrated payments, expert workout routines, and a chatbot.",
+      "Una aplicación que revoluciona la industria del fitness con un chat en tiempo real con entrenadores, pagos integrados, rutinas de ejercicio de expertos y un chatbot con IA.",
     link: "https://front-core-force.vercel.app/",
   },
   {
     imageSrc: back,
     title: "Ecommerce App",
     description:
-      "An ecommerce management app with a scalable backend and seamless integration, ensuring optimal user experience.",
+      "Una aplicación de gestión de ecommerce con un backend escalable y una integración fluida, asegurando una experiencia de usuario óptima.",
     link: "https://github.com/FabrizioZeballos/Ecommerce-Backend",
   },
 ];
@@ -53,7 +53,7 @@ export const Projects = () => {
       animate={mainControls}
       transition={{ duration: 0.5, delay: 0.25 }}
     >
-      <h3 className={styles["section-title"]}>Projects</h3>
+      <h3 className={styles["section-title"]}>Proyectos</h3>
       <div className={styles["projects-container"]}>
         {projectData.map((project) => (
           <ProjectCard

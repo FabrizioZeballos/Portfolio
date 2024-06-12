@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <div className={styles["footer"]}>
       <p className={styles["footer-txt"]}>
-        Designed and built with 🤍 by Fabrizio
+        Diseñado y desarrollado con 🤍 por Fabrizio
       </p>
     </div>
   );

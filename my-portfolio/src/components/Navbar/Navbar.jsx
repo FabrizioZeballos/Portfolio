@@ -10,7 +10,7 @@ export const Navbar = () => {
       </h1>
       <ul className={styles["nav-links"]}>
         <li>
-          <a href="#projects">Projects</a>
+          <a href="#projects">Proyectos</a>
         </li>
         <li>
           <a
