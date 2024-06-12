@@ -50,3 +50,23 @@
 .nav-links a:active {
   transform: scale(0.95);
 }
+
+.contact-links {
+  opacity: 0;
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    opacity: 0;
+    position: absolute;
+  }
+  .contact-links {
+    opacity: 1;
+    position: relative;
+  }
+  .contact-links a {
+    margin-left: 1rem;
+    color: #fff;
+  }
+}

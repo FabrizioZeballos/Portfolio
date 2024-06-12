@@ -1,4 +1,6 @@
 import styles from "./Navbar.module.css";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 export const Navbar = () => {
   return (
@@ -29,6 +31,22 @@ export const Navbar = () => {
           </a>
         </li>
       </ul>
+      <div className={styles["contact-links"]}>
+        <a
+          href="https://github.com/FabrizioZeballos"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/zeballosfab"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin />
+        </a>
+      </div>
     </nav>
   );
 };
